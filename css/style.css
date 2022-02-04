@@ -1,0 +1,107 @@
+
+
+        ul, ol, li {list-style: none; margin: 0; padding: 0; }
+
+h1{font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  list-style:none;}
+
+
+
+
+    .banner > video {position:absolute; object-fit: cover; width:100%; height:100%; overflow: hidden;}
+    .content {position: relative; z-index: 1; max-width: 1100px; margin:0 auto; text-align: center; height:290px;}
+    .content > h1 {margin:0; padding:0; font-size:4.5em;  text-transform: uppercase; color:white;}
+    .mainh1 > .rime{ color:blue; width:100px; height:100px; margin-right:10px; }
+
+   
+    .lime{background-color: bisque; width:1100px; height:130px; transition: all 0.5s linear; }
+    .mainh1{width:100%; height:100px; display:flex;}
+.lorem {color:white;}
+
+.lime > .abo{width:50%; height:100px; background-color: black;}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  max-width: 0;
+  transition: 0.5s ease;
+  z-index: 111;
+  background-color: #eee;
+}
+.wrap {
+  position: absolute;
+  margin-top:40px;
+  margin-left:-430px;
+  width: 100px;
+  height: 100px;
+  cursor:pointer;
+ 
+  border: 1px dashed rgba(255, 255, 255, 0.5);
+  transform-style: preserve-3d;
+  animation: turn 5s linear infinite;
+}
+
+.square {
+  position: absolute;
+  cursor:pointer;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 36px;
+  line-height: 98px;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+.burger-check:checked~.menu {
+  max-width: 200px;
+}
+.square:nth-child(1) {
+  transform: rotateY(0deg) translateZ(50px);
+}
+
+.square:nth-child(2) {
+  transform: rotateY(180deg) translateZ(50px);
+}
+
+.square:nth-child(3) {
+  transform: rotateY(-90deg) translateZ(50px);
+}
+
+.square:nth-child(4) {
+  transform: rotateY(90deg) translateZ(50px);
+}
+
+.square:nth-child(5) {
+  transform: rotateX(90deg) translateZ(50px);
+}
+
+.square:nth-child(6) {
+  transform: rotateX(-90deg) translateZ(50px);
+}
+
+@keyframes turn {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+
+.topcontent{width:500px; height:500px; position: absolute; top:0; z-index: 40;}
