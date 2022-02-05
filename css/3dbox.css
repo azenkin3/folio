@@ -1,0 +1,81 @@
+
+	.wrap {
+        position: absolute;
+        margin-top:60px;
+        margin-left:100px;
+        width: 100px;
+        height: 100px;
+       
+        border: 1px dashed rgba(255, 255, 255, 0.5);
+        transform-style: preserve-3d;
+        animation: turn 5s linear infinite;
+        z-index: 40;
+      }
+      
+      .square {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border: 1px solid #fff;
+        background-color: rgba(255, 255, 255, 0.1);
+        font-size: 36px;
+        line-height: 98px;
+        color: rgba(255, 255, 255, 0.3);
+        text-align: center;
+      }
+      
+      .square:nth-child(1) {
+        transform: rotateY(0deg) translateZ(50px);
+      }
+      
+      .square:nth-child(2) {
+        transform: rotateY(180deg) translateZ(50px);
+      }
+      
+      .square:nth-child(3) {
+        transform: rotateY(-90deg) translateZ(50px);
+      }
+      
+      .square:nth-child(4) {
+        transform: rotateY(90deg) translateZ(50px);
+      }
+      
+      .square:nth-child(5) {
+        transform: rotateX(90deg) translateZ(50px);
+      }
+      
+      .square:nth-child(6) {
+        transform: rotateX(-90deg) translateZ(50px);
+      }
+
+
+      @keyframes turn {
+        0% {
+          transform: rotateX(0deg) rotateY(0deg);
+        }
+        100% {
+          transform: rotateX(360deg) rotateY(360deg);
+        }
+      }
+
+    /* title flip */
+
+      .lime > .abo{animation-name: rotate;
+        animation-duration: 4s;
+        animation-iteration-count: 10; }
+      
+        .lime > .abo2{animation-name: rotate;
+        animation-duration: 5s;
+        animation-iteration-count: 10; }
+      
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotateX(360deg);
+        }
+      }

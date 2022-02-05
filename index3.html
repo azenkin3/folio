@@ -3,131 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <title>풀스크린 + 무브</title>
-<style>
-	html,body {width:100%;height:100%;margin:0px;padding:0px;overflow:hidden;font-family:sans-serif;}
-	
-	#fullpage {position:relative;top:0px;z-index:9;width:100%;height:100%;}
-	.fullsection{width:100%;height:100%;position:relative;}
-	.full1{background:red;}
-	.full2{background:yellow;}
-	.full3{background:green;}
-	.full4{background:blue;}
-	.full5{background:purple;}
-	#fullpage span{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;font-size:4em;font-weight:bold;}
-	.full2 span{color:#000;}
-
-	ul, li{margin:0;padding:0;list-style:none}
-	.quick {position:fixed;right:20px;top:50%;transform:translateY(-50%); z-index:100000}
-	.quick li {width:10px;height:10px;margin-bottom:10px; border-radius:15px;border:2px solid #fff;cursor:pointer;}
-	.quick .on {background:#fff;}
-
-	input[id="menuicon"] {display:none;}
-input[id="menuicon"] + label {display:block;width:60px;position:relative;cursor:pointer;}
-input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:5px;border-radius:30px;background:#000;transition:all .35s;}
-input[id="menuicon"] + label span:nth-child(1) {top:0;}
-input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);} /* ����ϰ� ����� �� �ִ� style top:calc(50% - 2.5px); margin-top:-2.5px;*/
-input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
-input[id="menuicon"]:checked + label {z-index:2;}
-input[id="menuicon"]:checked + label span {background:#fff;}
-input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
-input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
-input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
-div[class="sidebar"] {width:300px;height:100%;background:#222;position:fixed;top:0;left:-300px;z-index:1;transition:all .35s;}
-input[id="menuicon"]:checked + label + div {left:0;}
-
-
-	.wrap {
-  position: absolute;
-  margin-top:40px;
-  margin-left:90px;
-  width: 100px;
-  height: 100px;
- 
-  border: 1px dashed rgba(255, 255, 255, 0.5);
-  transform-style: preserve-3d;
-  animation: turn 5s linear infinite;
-  z-index: 40;
-}
-
-.square {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border: 1px solid #fff;
-  background-color: rgba(255, 255, 255, 0.1);
-  font-size: 36px;
-  line-height: 98px;
-  color: rgba(255, 255, 255, 0.3);
-  text-align: center;
-}
-
-.square:nth-child(1) {
-  transform: rotateY(0deg) translateZ(50px);
-}
-
-.square:nth-child(2) {
-  transform: rotateY(180deg) translateZ(50px);
-}
-
-.square:nth-child(3) {
-  transform: rotateY(-90deg) translateZ(50px);
-}
-
-.square:nth-child(4) {
-  transform: rotateY(90deg) translateZ(50px);
-}
-
-.square:nth-child(5) {
-  transform: rotateX(90deg) translateZ(50px);
-}
-
-.square:nth-child(6) {
-  transform: rotateX(-90deg) translateZ(50px);
-}
-
-@keyframes turn {
-  0% {
-    transform: rotateX(0deg) rotateY(0deg);
-  }
-  100% {
-    transform: rotateX(360deg) rotateY(360deg);
-  }
-}
-
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotateX(360deg);
-  }
-}
-
-.lime > .abo{transition: all 0.5s linear; width:50%; height:100px; background-color: black; float:left; }
-.lime > .abo2{width:50%; height:100px; background-color: #fff;}
-.topcontent{width:500px; height:500px; position: absolute; top:0; z-index: 40;}
-    .banner > video {position:absolute; object-fit: cover; width:100%; height:100%; overflow: hidden;}
-    .content {position: relative; z-index: 1; max-width: 1100px; margin:0 auto; text-align: center; height:290px;}
-    .content > h1 {margin:0; padding:0; font-size:4.5em;  text-transform: uppercase; color:white;}
-    .mainh1 > .rime{ color:blue; width:100px; height:100px; margin-right:10px; }
-
-   
-    .lime{display:flex; margin-top:400px; background-color: bisque; width:1100px; height:130px; transition: all 0.5s linear; }
-    .mainh1{width:100%; height:100px; display:flex;}
-.lorem {margin:0; padding:0;  color:white;}
-
-.lime > .abo{animation-name: rotate;
-  animation-duration: 4s;
-  animation-iteration-count: 10; }
-
-  .lime > .abo2{animation-name: rotate;
-  animation-duration: 5s;
-  animation-iteration-count: 10; }
-
-</style>
+<link rel="stylesheet" href="css/3dbox.css">
+<link rel="stylesheet" href="css/folio.css">
+<link rel="stylesheet" href="css/fullpage.css">
+<link rel="stylesheet" href="css/input.css">
+<link rel="stylesheet" href="css/fullpage.css">
 </head>
 <body>
 
@@ -143,17 +23,29 @@ input[id="menuicon"]:checked + label + div {left:0;}
 		<div class="square"></div>
 	  </div>
 </label>
-<div class="sidebar"></div>
+<div class="sidebar">
+	<ul>
+		<li><a href="">HOME</a></li>
+		<li><a href="" javascript="window.scroll({ top: 2500, left: 0, behavior: 'smooth' });
+			">Work ability</a></li>
+		<li><a href="#fu2" class="link">Portfolio 1</a></li>
+		<li><a href="#fu3" class="link">Portfolio 2</a></li>
+		<li>Portfolio 3</li>
+		<li>Portfolio 4</li>
+		<li>About</li>
+		<li>Contact</li>
+	</ul>
+</div>
 		
 		<div class='quick'><ul></ul></div>
 
+		
 		<div class="fullsection full1" pageNum="1">
-			<div class="banner">
+			
 			<video autoplay muted loop poster>	
-				<source src="/video/seoul.mp4" type="video/mp4">
+				<source src="./video/seoul.mp4" type="video/mp4">
 			</video>
-		</div>
-
+		
 			<div class="content">
             
 				<div class="mainh1">
@@ -171,14 +63,14 @@ input[id="menuicon"]:checked + label + div {left:0;}
 	
 			   
 				</div>
-			  
 			</div>
+			
 				
-				 
-		<div class="fullsection full2" pageNum="2"><span>2 PAGE</span></div>
-		<div class="fullsection full3" pageNum="3"><span>3 PAGE</span></div>
-		<div class="fullsection full4" pageNum="4"><span>4 PAGE</span></div>
-		<div class="fullsection full5" pageNum="5"><span>5 PAGE</span></div>
+	    
+		<div class="fullsection full2" pageNum="2"><span>2 PAGE</span></div>	
+		<div class="fullsection full3" pageNum="3" id="fu1"><a name="hz">1</a><span>3 PAGE</span></div>
+		<div class="fullsection full4" pageNum="4" id="fu2"><span>4 PAGE</span></div>
+		<div class="fullsection full5" pageNum="5" id="fu3"><span>5 PAGE</span></div>
 	</div>
 </body>
 
@@ -268,6 +160,9 @@ function quickClick(){
 		$("#fullpage").animate({"top": -length + "px"},800, "swing");
 		return false;
 	});
+
+	
+
 }
 
 </script>
