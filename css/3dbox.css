@@ -64,11 +64,11 @@
 
       .lime > .abo{animation-name: rotate;
         animation-duration: 4s;
-        animation-iteration-count: 10; }
+        animation-iteration-count: 130; }
       
         .lime > .abo2{animation-name: rotate;
         animation-duration: 5s;
-        animation-iteration-count: 10; }
+        animation-iteration-count: 130; }
       
 
       @keyframes rotate {
