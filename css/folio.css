@@ -29,7 +29,7 @@ html{
 .photo{width:150px; height:150px; margin:0 auto; border-radius: 50%; background-color: black; position: relative; top:10%;  }
 .photobox h1 {margin-top:45px;}
 
-.name h1 {padding-top:30px; margin-top:0px; margin-left:10px; font-size:20px; }
+.name h1 {padding-top:30px; margin-left:10px; font-size:20px; }
 .name p {font-size:15px; margin-left:10px;}
 
 .photobox:after{top:378px;content:""; height:30px; width:300px; transform: skewY(-5deg); position: absolute; left:360px; background-color: #8d9e78;}
