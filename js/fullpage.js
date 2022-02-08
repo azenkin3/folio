@@ -22,8 +22,7 @@ function fullset(){
 			if(page.index() > 0){ //첫번째 페이지가 아닐때 (index는 0부터 시작임)
 				page=page.index()-1;
 				$("#fullpage").animate({"top": -pagelength + "px"},1000, "swing");
-			}else{
-				alert("첫번째페이지 입니다.");
+			
 			}	
 		}else{ // 마우스 휠을 아래로	
 			var nextPage=parseInt(page.index()+1); //다음페이지번호
