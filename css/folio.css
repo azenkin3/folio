@@ -47,6 +47,7 @@ html{
 .follow ul li {display:flex; justify-content: center; font-size:40px; float:left; margin-top:10px; margin-right:10px; background-color: #ffb300; border-radius: 3px; width:60px; height:60px;}
 .follow ul li:hover{transform: rotate(45deg) scale(0.8);  transition-duration: 0.3s; }
 .follow ul li i {margin-top:10px;}
+.hbox i:hover{transform:scale(1.2); transition: 1.4s;}
 .aboutright{width:75%; height:100%; }
 .aboutme{width:100%; height:40%;}
 
@@ -78,13 +79,27 @@ html{
 .hobbyicon3 p{font-weight: 700; margin-top:15px; font-size:14px;}
 
 
-.pagephoto{width:100%; height:100%; background-color: aliceblue; display:flex; }
+.pagephoto{width:100%; height:100%;  display:flex; }
 
 .page{width:55%; height:80%;  margin-top:100px; margin-left:150px;}
 
 .image{width:100%; height:60%; background-color: antiquewhite;
 	 background-image: url(../img/트래블로.JPG); background-position: center; background-size: cover;
 	margin-top:150px;}
+
+
+	.image2{width:100%; height:60%; background-color: antiquewhite;
+		background-image: url(../img/onehost.JPG); background-position: center; background-size: cover;
+	   margin-top:150px;}
+
+	   .image3{width:100%; height:60%; background-color: antiquewhite;
+		background-image: url(../img/bookpage.JPG); background-position: center; background-size: cover;
+	   margin-top:150px;}
+
+	   .image4{width:100%; height:60%; background-color: antiquewhite;
+		background-image: url(../img/danawa.JPG); background-position: center; background-size: cover;
+	   margin-top:150px;}
+
 
 .abouttt{width:45%; height:80%;  margin-top:100px;}
 
@@ -97,6 +112,19 @@ html{
 
 .aboutf{margin-left:20px; margin-top:15px;}
 
-.aboutf{width:250px; height:50px; background-color: #2079ab; text-align: center; padding-top:20px;}
-.aboutf a {width:100px; height: 100%; background-color: #a7a7a7;}
+.aboutf{width:400px; height:50px; text-align: center; padding-top:20px; margin:0 auto; margin-top:45px; }
 
+.pagebtn1{-webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	
+
+
+	text-decoration: none;
+	border-radius: 4px;
+	margin-left:20px; width:160px; height:50px; margin-bottom: 15px; background-color: white; }
+
+.pagebtn1:hover{	color: rgba(255, 255, 255, 0.85);
+	box-shadow: rgba(30, 22, 54, 0.7) 0 80px 0px 2px inset;}
