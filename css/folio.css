@@ -20,19 +20,21 @@ html{
 #skila{display:flex; padding-top:200px; justify-content: center;}
 #skilb{display:flex; padding-top:100px; justify-content: center;}
 #cureer{position:absolute; top:7.5%; right:10%; }
-.curbox1{width:200px; height:130px; border:solid 1px #2079ab; margin-top:30px;}
+.curbox1{width:200px; height:130px; border:solid 1px #2079ab; margin-top:30px; text-align: center;}
+
+.curbox1 p {margin-top:10px; font-size:14px; font-weight: 700;}
 
 .about1{width:100%; height:850px; background-color: aliceblue;}
 .about{display:flex; width:1200px; height:850px;  margin:0 auto; margin-top:30px; }
 .aboutleft{width:25%; height:100%;  }
-.photobox{width:100%; height:40%; background-color: #8d9e78; text-align: center; }
+.photobox{width:100%; height:40%; background-color: #ffb300; text-align: center; }
 .photo{width:150px; height:150px; margin:0 auto; border-radius: 50%; background-color: black; position: relative; top:10%;  }
 .photobox h1 {margin-top:45px;}
 
 .name h1 {padding-top:30px; margin-left:10px; font-size:20px; }
-.name p {font-size:15px; margin-left:10px;}
+.name p {font-size:14px; margin-left:10px; line-height: 3; }
 
-.photobox:after{top:378px;content:""; height:30px; width:300px; transform: skewY(-5deg); position: absolute; left:360px; background-color: #8d9e78;}
+.photobox:after{top:325px;content:""; height:30px; width:300px; transform: skewY(-5deg); position: absolute; left:360px; background-color: #ffb300;}
 
 .name{width:100%; height:30%;}
 .contact{width:100%; height:20%; }
@@ -41,26 +43,60 @@ html{
 .contact ul li i {margin-right:10px;}
 .follow{width:100%; height:10%;}
 .follow h1 {margin-top:0px; font-size:20px; margin-left:10px;}
-.follow ul {float:left;}
-.follow ul li {font-size:40px; float:left; margin-top:-8px; margin-right:30px; }
+.follow ul {float:left; margin-left:10px;}
+.follow ul li {display:flex; justify-content: center; font-size:40px; float:left; margin-top:10px; margin-right:10px; background-color: #ffb300; border-radius: 3px; width:60px; height:60px;}
+.follow ul li:hover{transform: rotate(45deg) scale(0.8);  transition-duration: 0.3s; }
+.follow ul li i {margin-top:10px;}
 .aboutright{width:75%; height:100%; }
 .aboutme{width:100%; height:40%;}
 
 .aboutme p {margin-top:5px; margin-left:15px;}
 .aboutme h1{margin-top:0px; padding-top:80px; margin-left:15px; }
 
-.hobby{width:100%; height:30%; background-color: yellowgreen;}
+.hobby{width:100%; height:30%; background-color: white;}
 
-.linea{width:3px; background-color: black; height:100%;}
-.edu{width:100%; height:30%; background-color: violet;}
+.linea{width:3px; background-color: black; height:100%; float:left; background-color: #b1afaf70;}
+.edu{width:100%; height:30%; background-color: white;}
 
-.hobbyicon{display:flex; justify-content: center; justify-content: space-around; margin:0 auto; border:solid 1px black; width:80%; height: 60%; margin-top:20px;}
-.hbox{width:100px; height:100px; background-color: black; margin-top:30px;}
-.hbox i {width:80px; height:80px; color:white;}
+.hobbyicon{display:flex; justify-content: center; justify-content: space-around; margin:0 auto; border:solid 1px black; width:80%; height: 63%; margin-top:20px; background-color: #b1afaf70;}
+.hbox{width:100px; height:100px;  margin-top:30px; display:flex; justify-content: center;  flex-direction: column; text-align: center;}
+.hbox i {width:80px; height:80px;     color: #ffb300; width:60px; height:60px; line-height: 60px; font-size:50px; text-align: center; margin-top:8px; margin-left:18px;}
+.hbox p {color:black;}
 .lime{display:flex; margin-top:-750px;  width:1500px; height:130px; transition: all 0.5s linear; }
 .mainh1{width:100%; height:100px; display:flex;}
 .lorem {margin:0; padding:0;  color:white;}
 
 .sidebar ul {margin-top:300px; text-align: center;}
 .sidebar ul li {color:white; padding-top:40px;}
+
+
+.edu h1 {margin-left:20px;}
+.aboutme h1{margin-left:20px;}
+.hobby h1 {margin-left:20px;}
+
+.hobbyicon3{display:flex; justify-content: center; justify-content: space-around; margin:0 auto; border:solid 1px black; width:80%; height: 30%; margin-top:20px; background-color: #b1afaf70;}
+.hobbyicon3 p{font-weight: 700; margin-top:15px; font-size:14px;}
+
+
+.pagephoto{width:100%; height:100%; background-color: aliceblue; display:flex; }
+
+.page{width:55%; height:80%;  margin-top:100px; margin-left:150px;}
+
+.image{width:100%; height:60%; background-color: antiquewhite;
+	 background-image: url(../img/트래블로.JPG); background-position: center; background-size: cover;
+	margin-top:150px;}
+
+.abouttt{width:45%; height:80%;  margin-top:100px;}
+
+.topabout {font-size:9em; font-weight: 900; color:#b1afaf70; margin-left:20px;}
+.aboutb{margin-left:20px;}
+.aboutc{margin-left:20px; margin-top:10px; font-size:20px;}
+.aboutd{margin-left:20px; margin-top:10px; color:#a7a7a7; font-size:14px; margin-bottom: 40px;}
+.aboute{margin-left:20px; }
+.aboute ul li {line-height:3; font-size:14px; }
+
+.aboutf{margin-left:20px; margin-top:15px;}
+
+.aboutf{width:250px; height:50px; background-color: #2079ab; text-align: center; padding-top:20px;}
+.aboutf a {width:100px; height: 100%; background-color: #a7a7a7;}
 

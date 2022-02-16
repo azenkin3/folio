@@ -6,12 +6,12 @@ html,body { width:100%;height:100%; overflow: hidden;}
 .fullsection{width:100%;height:100%;position:relative;}
 .full2{background:white; height:100%;}
 .full3{background:white;}
-.full4{background:blue;}
+.full4{background:white;}
 .full5{background:purple;}
-#fullpage span{display:block;position:absolute;top:10%;left:10%;transform:translate(-50%,-50%);color:black;font-size:3em;font-weight:bold;}
-#fullpage .span2{display:block;position:absolute;top:15%;left:10%;transform:translate(-50%,-50%);color:#a19fad;font-size:2em;font-weight:bold;}
+#fullpage span{display:block;position:absolute; top:6%; left:50%;transform:translate(-50%,-50%);color:black;font-size:3em;font-weight:bold;}
+#fullpage .span2{display:block;position:absolute;top:10%;left:50%;transform:translate(-50%,-50%);color:#a19fad;font-size:2em;font-weight:bold;}
 
 ul, li{margin:0;padding:0;list-style:none}
 .quick {position:fixed;right:20px;top:50%;transform:translateY(-50%); z-index:100000}
-.quick li {width:10px;height:10px;margin-bottom:10px; border-radius:15px;border:2px solid #fff;cursor:pointer;}
-.quick .on {background:#fff;}
+.quick li {width:10px;height:10px;margin-bottom:10px; border-radius:15px;border:2px solid burlywood;cursor:pointer;}
+.quick .on {background:burlywood;}

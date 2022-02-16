@@ -59,3 +59,68 @@
         stroke-dashoffset: 0;
     }
 }
+
+
+
+
+#skills{
+    width: 160px;
+    height: 160px;
+    position: relative;
+    margin-right:100px;
+    text-align: center;
+    
+}
+#skills .outer{
+/*     height: 160px;
+    width: 160px; */
+    border-radius: 50%;
+ 
+    padding: 20px;
+    margin-left:45px;
+}
+
+#skills .inner{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, .2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, .7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, .1),
+    0px 12px 10px -10px rgba(0, 0, 0, .05);
+}
+
+#skills #number {
+    font-weight: 700;
+    color: #555;
+
+}
+
+#skills circle{
+    fill: none;
+    stroke: #ffb300;
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 4s linear forwards;
+    
+}
+
+#skills svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-right:35px;
+    margin-left:45px;
+    
+}
+
+
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
