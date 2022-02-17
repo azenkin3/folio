@@ -17,15 +17,15 @@ html{
 .mainh1 > .rime{ color:black; width:100px; height:100px; margin-right:10px; }
 .banner{width:100%; height:100%; }
 
-#skila{display:flex; padding-top:200px; justify-content: center;}
-#skilb{display:flex; padding-top:100px; justify-content: center;}
-#cureer{position:absolute; top:7.5%; right:10%; }
-.curbox1{width:200px; height:130px; border:solid 1px #2079ab; margin-top:30px; text-align: center;}
+#skila{display:flex; padding-top:200px; justify-content: center; margin-left:80px;}
+#skilb{display:flex; padding-top:100px; justify-content: center; margin-left:80px;}
+#cureer{position:absolute; top:73%; right:10%; display:flex; margin-right:300px; margin-top:40px; }
+.curbox1{width:200px; height:130px; border:solid 1px #2079ab; margin-top:30px; text-align: center; margin-right:30px;}
 
 .curbox1 p {margin-top:10px; font-size:14px; font-weight: 700;}
 
 .about1{width:100%; height:850px; background-color: aliceblue;}
-.about{display:flex; width:1200px; height:850px;  margin:0 auto; margin-top:30px; }
+.about{display:flex; width:1200px; height:850px;  margin:0 auto; }
 .aboutleft{width:25%; height:100%;  }
 .photobox{width:100%; height:40%; background-color: #ffb300; text-align: center; }
 .photo{width:150px; height:150px; margin:0 auto; border-radius: 50%; background-color: black; position: relative; top:10%;  }
@@ -81,7 +81,7 @@ html{
 
 .pagephoto{width:100%; height:100%;  display:flex; }
 
-.page{width:55%; height:80%;  margin-top:100px; margin-left:150px;}
+.page{width:45%; height:80%;  margin-top:100px; margin-left:150px;}
 
 .image{width:100%; height:60%; background-color: antiquewhite;
 	 background-image: url(../img/트래블로.JPG); background-position: center; background-size: cover;
@@ -101,7 +101,7 @@ html{
 	   margin-top:150px;}
 
 
-.abouttt{width:45%; height:80%;  margin-top:100px;}
+.abouttt{width:55%; height:80%;  margin-top:100px;}
 
 .topabout {font-size:9em; font-weight: 900; color:#b1afaf70; margin-left:20px;}
 .aboutb{margin-left:20px;}
